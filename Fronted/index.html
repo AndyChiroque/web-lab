@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GESTOR DE TAREAS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a sample HTML document.</p>  
+    <div class="container">
+        <h1>Gestor De Tareas</h1>
+        
+        <div class="task-form">
+            <input type="text" placeholder="Escribe una tarea...">
+            <input type="text" placeholder="Agrega una descripción" >
+            <input type="date" required>
+            <button id="agregarButton">Agregar</button>
+        </div>
+
+    </div>
+    <!--details crea un bloque lateral con informacion despleglable-->
+    
+    <details open class="detalles">
+        <aside class="borde_lateral">
+            <h2>SELECCIONA: </h2>
+            <ul>
+                <li><a href="#">TAREAS DIARIAS</a></li>
+                <li><a href="#">TAREAS IMPORTANTES</a></li>
+                <li><a href="#">TAREAS PARA DESPUES</a></li>
+            </ul>
+        </aside>
+
+    </details>
+    
     <script>
         console.log("Hello from the script!");
     </script>
